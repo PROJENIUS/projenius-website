@@ -143,7 +143,7 @@
 }
 
 .about-2 {
-    background-image: linear-gradient(#12192940), url(images/projenius-banner-1.webp);
+    background-image: linear-gradient(#12192940), url(/images/projenius-banner-1.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
