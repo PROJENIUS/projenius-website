@@ -1,0 +1,250 @@
+.contact-section{
+    overflow:hidden;
+    background:#111827;
+}
+
+/* =========================
+   TOP SECTION
+========================= */
+
+.contact-section .section-1{
+    background:#121929;
+    padding:100px 0 220px;
+    position:relative;
+}
+
+.contact-section .heading{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    text-align:center;
+}
+
+.contact-section .heading #title{
+    color:#fff;
+}
+
+/* =========================
+   IMAGE CARD
+========================= */
+
+.contact-section .section-2{
+    margin-top:-170px;
+    position:relative;
+    z-index:2;
+}
+
+.contact-card{
+    position:relative;
+    overflow:hidden;
+    border-radius:40px;
+    height:650px;
+}
+
+.contact-card img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+.contact-card .overlay{
+    position:absolute;
+    inset:0;
+    background:linear-gradient(#66c7dd7c, #121929b9);
+}
+
+/* CARD CONTENT */
+
+.contact-card .card-content{
+    position:absolute;
+    left:60px;
+    bottom:60px;
+    z-index:2;
+
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+}
+
+.contact-card .card-content h3{
+    color:#fff;
+    font-size:58px;
+    line-height:1.1;
+    font-weight:700;
+    margin-bottom:25px;
+}
+
+/* BUTTON */
+
+.contact-section .btn {
+    position: relative;
+    overflow: hidden;
+    height: 3rem;
+    padding: 10px 20px;
+    border-radius: 1.5rem;
+    background: #3d3a4e;
+    background-size: 400%;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    white-space: nowrap;
+}
+
+.contact-section .btn:hover {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 10px 30px rgba(102, 199, 221, 0.35);
+}
+
+.contact-section .btn:active {
+    transform: translateY(0) scale(0.98);
+}
+
+.contact-section .btn:hover::before {
+    transform: scaleX(1);
+}
+
+.contact-section .btn .btn-content {
+    position: relative;
+    z-index: 1;
+    font-size: 18px;
+}
+
+.contact-section .btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    background: #66C7DD;
+    transition: all 0.457s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* =========================
+   COUNTER SECTION
+========================= */
+
+.counter-section{
+    background:
+        linear-gradient(
+            to bottom,
+            #121929 0%,
+            rgba(18, 25, 41, 0.95) 20%,
+            rgba(18, 25, 41, 0.75) 40%,
+            rgba(18, 25, 41, 0.45) 60%,
+            rgba(18, 25, 41, 0.1) 80%,
+            transparent 100%
+        ),
+        url('/images/contact-section-bg.png');
+
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+
+    padding:140px 0 80px;
+    margin-top:-70px;
+}
+
+.counter-wrapper{
+    display:flex;
+    justify-content:space-between;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.counter-box{
+    text-align:center;
+    flex:1;
+    min-width:180px;
+}
+
+.counter-box h2{
+    color:#fff;
+    font-size:72px;
+    font-weight:700;
+    margin-bottom:10px;
+    position:relative;
+}
+
+.counter-box p{
+    color:#fff;
+    font-size:13px;
+    font-weight:600;
+    letter-spacing:1px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:991px){
+
+    .contact-section .contact-section-title{
+        font-size:42px;
+    }
+
+    .contact-card{
+        height:500px;
+    }
+
+    .contact-card .card-content{
+        left:40px;
+        bottom:40px;
+    }
+
+    .contact-card .card-content h3{
+        font-size:42px;
+    }
+
+    .counter-wrapper{
+        gap:50px;
+        justify-content:center;
+    }
+}
+
+@media(max-width:767px){
+
+    .contact-card{
+        height:420px;
+        border-radius:25px;
+    }
+
+    .contact-card .card-content{
+        left:25px;
+        bottom:25px;
+    }
+
+    .contact-card .card-content h3{
+        font-size:32px;
+        margin-bottom:20px;
+    }
+
+    .contact-section .contact-section-title{
+        font-size:34px;
+    }
+
+    .contact-section .section-2 .btn{
+        min-width:140px;
+        height:3rem;
+        padding:0 24px;
+    }
+
+    .contact-section .section-2 .btn .btn-content{
+        font-size:16px;
+    }
+
+    .counter-box h2{
+        font-size:50px;
+    }
+
+    .counter-section{
+        padding:120px 0 60px;
+    }
+}

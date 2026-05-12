@@ -1,0 +1,60 @@
+body {
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', serif;
+}
+
+p, span, a, li, label, input, textarea, button {
+    font-family: 'Outfit', sans-serif;
+}
+
+#title {
+    font-weight: 700;
+    font-size: 55px;
+}
+
+
+#title.section-title{
+    font-weight: 700;
+    font-size: 40px;
+}
+#sub-heading{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    color: #66C7DD;
+}
+
+#sub-heading.about{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    color: #66C7DD;
+    display: flex;
+    justify-content: center;
+}  
+
+html, body {
+  overflow-x: hidden;
+}
+
+.container.title-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 300px;
+}
+
+h1.page-title {
+    color: white;
+    font-size: 70px;
+}
+
+.header-wrap {
+    height: 468px;
+    border-bottom: 8px solid #61c9e1;
+}

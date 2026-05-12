@@ -1,0 +1,177 @@
+/* ── TOP SPACER ── */
+.svc-spacer-top {
+    height: 20vh;
+    background: #0b1628;
+}
+
+/* ── SECTION ── */
+.svc-section {
+    display: flex;
+    align-items: flex-start;
+    padding: 80px 5%;
+    background: #0b1628;
+    color: #fff;
+}
+
+/* ══════════════════════
+   LEFT SIDE — STICKY
+══════════════════════ */
+.svc-left {
+    width: 40%;
+    position: sticky;
+    top: 100px;
+    height: fit-content;
+    padding-right: 40px;
+}
+
+.svc-sub {
+    display: inline-block;
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #4ecca3;
+    margin-bottom: 16px;
+}
+
+.svc-title {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.svc-para {
+    color: #aaa;
+    line-height: 1.8;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.svc-left .btn {
+    position: relative;
+    overflow: hidden;
+    height: 3rem;
+    padding: 10px 20px;
+    border-radius: 1.5rem;
+    background: #3d3a4e;
+    background-size: 400%;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    white-space: nowrap;
+}
+
+.svc-left .btn:hover {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 10px 30px rgba(102, 199, 221, 0.35);
+}
+
+.svc-left .btn:active {
+    transform: translateY(0) scale(0.98);
+}
+
+.svc-left .btn:hover::before {
+    transform: scaleX(1);
+}
+
+.svc-left .btn .btn-content {
+    position: relative;
+    z-index: 1;
+    font-size: 18px;
+}
+
+.svc-left .btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    background: #66C7DD;
+    transition: all 0.457s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ══════════════════════
+   RIGHT SIDE — SCROLL
+══════════════════════ */
+.svc-right {
+    width: 60%;
+}
+
+/* ── BASE CARD ── */
+.svc-card {
+    height: 420px;
+    margin-bottom: 100px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: sticky;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+}
+
+/* Each card stacks with z-index and slight top offset */
+.svc-card-1 {
+    top: 100px;
+    z-index: 1;
+}
+
+.svc-card-2 {
+    top: 120px;
+    z-index: 2;
+}
+
+.svc-card-3 {
+    top: 140px;
+    z-index: 3;
+}
+
+.svc-card-4 {
+    top: 160px;
+    z-index: 4;
+}
+
+/* ── CARD IMAGE ── */
+.svc-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* ── DARK OVERLAY ── */
+.svc-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.75) 0%, transparent 55%);
+}
+
+/* ── CARD TEXT CONTENT ── */
+.svc-content {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+
+.svc-card-title {
+    font-size: 26px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.svc-read-more {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: letter-spacing 0.3s ease;
+}
+
+.svc-read-more:hover {
+    letter-spacing: 1px;
+}

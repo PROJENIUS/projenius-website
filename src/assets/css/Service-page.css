@@ -1,0 +1,231 @@
+.header-wrap {
+    background-image: linear-gradient(#1219297d), url('images/projenius-banner.webp');
+}
+
+.header-wrap {
+  background-image: linear-gradient(#1219297d),
+    url("images/projenius-banner.webp");
+}
+
+/* =========================================
+   COURSE SECTION
+========================================= */
+
+.modern-course-section {
+  padding: 100px 0;
+  background: #ffffff;
+}
+
+.modern-course-section .section-heading {
+  margin-bottom: 60px;
+}
+
+.modern-course-card {
+  background: #ffffff;
+  border-radius: 28px;
+  overflow: hidden;
+  border: 1px solid #e8edf5;
+  transition: 0.4s;
+  height: 100%;
+}
+
+.modern-course-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
+}
+
+.modern-course-image {
+  height: 250px;
+  overflow: hidden;
+}
+
+.modern-course-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.modern-course-card:hover .modern-course-image img {
+  transform: scale(1.08);
+}
+
+.modern-course-content {
+  padding: 30px;
+}
+
+.modern-course-content h3 {
+  color: #07142f;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  line-height: 1.4;
+}
+
+.modern-course-content p {
+  color: #5c6574;
+  line-height: 1.9;
+  font-size: 15px;
+  margin-bottom: 26px;
+}
+
+.modern-course-content .btn {
+    position: relative;
+    overflow: hidden;
+    height: 3rem;
+    padding: 10px 20px;
+    border-radius: 1.5rem;
+    background: #3d3a4e;
+    background-size: 400%;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    white-space: nowrap;
+}
+
+.modern-course-content .btn:hover {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 10px 30px rgba(102, 199, 221, 0.35);
+}
+
+.modern-course-content .btn:active {
+    transform: translateY(0) scale(0.98);
+}
+
+.modern-course-content .btn:hover::before {
+    transform: scaleX(1);
+}
+
+.modern-course-content .btn .btn-content {
+    position: relative;
+    z-index: 1;
+    font-size: 18px;
+}
+
+.modern-course-content .btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    background: #66C7DD;
+    transition: all 0.457s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 991px) {
+  .modern-course-image {
+    height: 230px;
+  }
+
+  .modern-course-content h3 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .modern-course-section {
+    padding: 70px 0;
+  }
+
+  .modern-course-section .section-heading {
+    margin-bottom: 40px;
+  }
+
+  .modern-course-image {
+    height: 220px;
+  }
+
+  .modern-course-content {
+    padding: 24px;
+  }
+
+  .modern-course-content h3 {
+    font-size: 22px;
+  }
+
+  .modern-course-content p {
+    font-size: 14px;
+  }
+
+  .modern-course-content button {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.workshop-1 img.img-workshop-1 {
+    width: 100%;
+}
+
+.workshop-1 .even {
+    background-color: #E8F7FA;
+}
+
+.workshop-1 .section {
+    padding-top: 72px;
+    padding-bottom: 20px;
+}
+
+.service-1{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.service-1 .box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 30px;
+    padding-top: 53px;
+    position: relative; /* ADD THIS */
+    border-radius: 100%;
+}
+
+i.bi.bi-code-slash.icon {
+    font-size: 30px;
+}
+
+.service-1 .icon-circle {
+    background-color: #121929;
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -32px; /* UPDATED */
+    left: 50%; /* ADD THIS */
+    transform: translateX(-50%); /* ADD THIS */
+}
+.service-1 .icon-circle.even {
+        background-color: #121929;
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 197px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.service-1.row.r2 {
+    margin-top: 115px;
+}
