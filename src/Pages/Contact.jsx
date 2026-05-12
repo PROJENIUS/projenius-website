@@ -6,7 +6,7 @@ import "../assets/css/Contact-page.css";
 export default function Contact() {
   return (
     <>
-      <section className="header-wrap">
+      <section className="header-wrap" style={{backgroundImage:'linear-gradient(#1219297d), url(/images/projenius-banner.webp)'}}>
         <Header />
         <div className="container title-section">
           <h1 className="page-title">Contact Us</h1>

@@ -9,7 +9,7 @@ import iot from './iot-course';
 export default function Workshop() {
   return (
     <>
-      <section className="header-wrap">
+      <section className="header-wrap" style={{backgroundImage:'linear-gradient(#1219297d), url(/images/projenius-banner.webp)'}}>
         <Header />
         <div className="container title-section">
           <h1 className="page-title">Workshop</h1>

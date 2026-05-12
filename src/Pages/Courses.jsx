@@ -52,7 +52,7 @@ export default function Courses() {
   return (
     <>
       {/* Header */}
-      <section className="header-wrap">
+      <section className="header-wrap" style={{backgroundImage:'linear-gradient(#1219297d), url(/images/projenius-banner.webp)'}}>
         <Header />
 
         <div className="container title-section">
