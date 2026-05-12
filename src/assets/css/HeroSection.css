@@ -2,7 +2,7 @@
    HERO WRAPPER
    ========================================= */
 .hero-wrapper {
-    background-image: linear-gradient(135deg, #121929, transparent), url('../img/projenius-banner.webp');
+    background-image: linear-gradient(135deg, #121929, transparent), url('../images/projenius-banner.webp');
     padding: 20px;
     position: relative;
     overflow: hidden;
