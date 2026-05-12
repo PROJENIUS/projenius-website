@@ -11,7 +11,7 @@ export default function About() {
 
   return (
     <>
-      <div className="header-wrap">
+      <div className="header-wrap" style={{backgroundImage:'url(/images/projenius-banner-1.webp)'}}>
 
         <Header />
         <div className="container title-section">
