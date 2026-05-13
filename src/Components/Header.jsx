@@ -29,10 +29,10 @@ export default function Header() {
                 {/* Top Bar */}
                 <div className="top-bar d-flex justify-content-between align-items-center">
 
-                    <div className="contact">
+                    {/* <div className="contact">
                         <p>teamprojenius2025@gmail.com</p>
                         <p>+91 9876543210</p>
-                    </div>
+                    </div> */}
 
                     <div className="d-lg-none">☰</div>
 
