@@ -261,7 +261,7 @@ export default function Footer() {
                                 </div>
 
                                 <div>
-                                    PLOT NO 3, Erikarai St, Velmurugan Nagar, Namachivaya Nagar, Madurai, Tamil Nadu 625003
+                                    Plot No 3, Erikarai St, Velmurugan Nagar, Namachivaya Nagar, Madurai, Tamil Nadu 625003
                                 </div>
 
                             </div>
