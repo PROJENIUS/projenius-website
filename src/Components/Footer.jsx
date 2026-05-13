@@ -158,7 +158,7 @@ export default function Footer() {
                             </a>
 
                             <a
-                                href="https://instagram.com/projenius"
+                                href="https://instagram.com/projenius_"
                                 target="_blank"
                                 rel="noreferrer"
                                 className="footer-social instagram"
