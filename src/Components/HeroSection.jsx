@@ -169,9 +169,6 @@ export default function HeroSection() {
                             <a href="#" className="btn">
                                 <span className="btn-content">Explore more Courses</span>
                             </a>
-                            <a href="#" className="play-btn">
-                                <i className="bi bi-play-fill"></i>
-                            </a>
                         </div>
 
                         {/* Mobile dot indicators (hidden on lg+) */}
