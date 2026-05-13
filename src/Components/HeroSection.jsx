@@ -119,7 +119,7 @@ export default function HeroSection() {
                     linear-gradient(
                         135deg,
                         rgba(18,25,41,0.92),
-                        rgba(18,25,41,0.4)
+                        rgba(18,25,41,0.9)
                     ),
                     url(${slides[activeSlide].bg})
                 `,
