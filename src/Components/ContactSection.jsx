@@ -33,12 +33,21 @@ export default function ContactSection() {
                 <div className="container">
 
                     <div className="contact-card">
+                        <div className="image-slider">
 
-                        <img
-                            src="/images/bg.png"
-                            alt=""
-                            className="contact-img"
-                        />
+                            <img
+                                src="/images/bg.png"
+                                alt=""
+                                className="contact-img"
+                            />
+
+                            <img
+                                src="/images/bg2.png"
+                                alt=""
+                                className="contact-img"
+                            />
+
+                        </div>
 
                         <div className="overlay"></div>
 
@@ -51,7 +60,7 @@ export default function ContactSection() {
 
                             <Link href="/contact" className="btn">
                                 <span className="btn-content">
-                                    Let's Talk      
+                                    Let's Talk
                                 </span>
                             </Link>
 
