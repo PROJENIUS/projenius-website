@@ -148,6 +148,7 @@
 
 .footer-social:hover{
     transform:translateY(-4px);
+    color: #fff;
 }
 
 .whatsapp{

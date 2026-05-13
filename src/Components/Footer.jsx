@@ -85,7 +85,7 @@ export default function Footer() {
                             </div>
 
                             <div className="footer-phone">
-                                +91 98765 43210
+                                +91 90254 76322
                             </div>
 
                         </div>
@@ -149,7 +149,7 @@ export default function Footer() {
                         <div className="footer-socials">
 
                             <a
-                                href="https://wa.me/919876543210"
+                                href="https://wa.me/919025476322?text=Hello%20I%20want%20to%20know%20more%20about%20your%20services"
                                 target="_blank"
                                 rel="noreferrer"
                                 className="footer-social whatsapp"
@@ -167,7 +167,7 @@ export default function Footer() {
                             </a>
 
                             <a
-                                href="https://facebook.com/projenius"
+                                href="https://www.facebook.com/profile.php?id=61560720950335&sk=followers"
                                 target="_blank"
                                 rel="noreferrer"
                                 className="footer-social facebook"
@@ -176,7 +176,7 @@ export default function Footer() {
                             </a>
 
                             <a
-                                href="https://linkedin.com"
+                                href="https://www.linkedin.com/in/projenius-498444374/"
                                 target="_blank"
                                 rel="noreferrer"
                                 className="footer-social linkedin"
@@ -261,8 +261,7 @@ export default function Footer() {
                                 </div>
 
                                 <div>
-                                    123 Tech Park, Trichy,
-                                    Tamil Nadu, India
+                                    PLOT NO 3, Erikarai St, Velmurugan Nagar, Namachivaya Nagar, Madurai, Tamil Nadu 625003
                                 </div>
 
                             </div>
@@ -274,7 +273,7 @@ export default function Footer() {
                                 </div>
 
                                 <div>
-                                    info@projenius.com
+                                    teamprojenius2025@gmail.com
                                 </div>
 
                             </div>
@@ -286,7 +285,7 @@ export default function Footer() {
                                 </div>
 
                                 <div>
-                                    +91 98765 43210
+                                    +91 90254 76322
                                 </div>
 
                             </div>
