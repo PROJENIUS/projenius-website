@@ -637,6 +637,257 @@ export default function Startup() {
       </div>
 
     </section>
+     <section className="startup-faq-section">
+
+      <div className="container">
+
+        <div className="row align-items-start">
+
+          {/* LEFT SIDE */}
+          <div className="col-lg-6">
+
+            <div className="startup-faq-left">
+
+              {/* MINI TITLE */}
+              <div className="startup-faq-mini">
+
+                <span id="sub-heading">Startup FAQ</span>
+
+              </div>
+
+              {/* TITLE */}
+              <h2 id="title ">
+                We help startups
+                <br />
+                build scalable
+                <br />
+                digital products
+              </h2>
+
+              {/* IMAGES */}
+              <div className="startup-faq-images">
+
+                <div className="startup-faq-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop"
+                    alt=""
+                  />
+                </div>
+
+                <div className="startup-faq-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200&auto=format&fit=crop"
+                    alt=""
+                  />
+                </div>
+
+              </div>
+
+              {/* FEATURE */}
+              <div className="startup-feature-box">
+
+                <div className="startup-feature-icon">
+                  <i className="bi bi-display"></i>
+                </div>
+
+                <div className="startup-feature-content">
+
+                  <h4>Modern UI/UX Design</h4>
+
+                  <p>
+                    We create startup-focused digital experiences
+                    with scalable and modern user interface systems.
+                  </p>
+
+                </div>
+
+              </div>
+
+              {/* FEATURE */}
+              <div className="startup-feature-box border-0">
+
+                <div className="startup-feature-icon">
+                  <i className="bi bi-code-slash"></i>
+                </div>
+
+                <div className="startup-feature-content">
+
+                  <h4>Startup Development</h4>
+
+                  <p>
+                    Fast and reliable product development process
+                    designed specifically for startup businesses.
+                  </p>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          {/* RIGHT SIDE */}
+          <div className="col-lg-6">
+
+            <div className="startup-faq-right">
+
+              <p className="startup-faq-desc">
+                We provide complete startup support including MVP
+                development, UI/UX design, product scaling, and
+                long-term technical maintenance solutions.
+              </p>
+
+              {/* ACCORDION */}
+              <div
+                className="accordion startup-accordion"
+                id="startupAccordion"
+              >
+
+                {/* ITEM */}
+                <div className="accordion-item">
+
+                  <h2 className="accordion-header">
+
+                    <button
+                      className="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq1"
+                    >
+                      How long does MVP development take?
+                    </button>
+
+                  </h2>
+
+                  <div
+                    id="faq1"
+                    className="accordion-collapse collapse show"
+                    data-bs-parent="#startupAccordion"
+                  >
+
+                    <div className="accordion-body">
+
+                      MVP development usually takes between 4 to 12
+                      weeks depending on project complexity, features,
+                      and startup requirements.
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+                {/* ITEM */}
+                <div className="accordion-item">
+
+                  <h2 className="accordion-header">
+
+                    <button
+                      className="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq2"
+                    >
+                      Do you provide post-launch support?
+                    </button>
+
+                  </h2>
+
+                  <div
+                    id="faq2"
+                    className="accordion-collapse collapse"
+                    data-bs-parent="#startupAccordion"
+                  >
+
+                    <div className="accordion-body">
+
+                      Yes, we provide continuous technical support,
+                      updates, maintenance, and performance monitoring.
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+                {/* ITEM */}
+                <div className="accordion-item">
+
+                  <h2 className="accordion-header">
+
+                    <button
+                      className="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq3"
+                    >
+                      Can you help with UI/UX design?
+                    </button>
+
+                  </h2>
+
+                  <div
+                    id="faq3"
+                    className="accordion-collapse collapse"
+                    data-bs-parent="#startupAccordion"
+                  >
+
+                    <div className="accordion-body">
+
+                      Absolutely. We design modern, responsive,
+                      startup-focused UI/UX systems for web and mobile apps.
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+                {/* ITEM */}
+                <div className="accordion-item">
+
+                  <h2 className="accordion-header">
+
+                    <button
+                      className="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq4"
+                    >
+                      Do you work with early-stage startups?
+                    </button>
+
+                  </h2>
+
+                  <div
+                    id="faq4"
+                    className="accordion-collapse collapse"
+                    data-bs-parent="#startupAccordion"
+                  >
+
+                    <div className="accordion-body">
+
+                      Yes, we specialize in helping early-stage startups
+                      validate ideas and launch scalable digital products.
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
 
     </>
   );
