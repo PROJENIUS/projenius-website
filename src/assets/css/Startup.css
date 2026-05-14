@@ -1060,8 +1060,9 @@ body {
 }
 
 .startup-feature-icon i{
-        color: #66c7dd;
-    font-size: 42px;
+        font-size: 42px;
+    color: #66c7dd;
+}
 
 .startup-feature-content h4{
     font-size:22px;
