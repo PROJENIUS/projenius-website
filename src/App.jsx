@@ -4,7 +4,7 @@ import Home from "./Pages/Home";
 import Services from "./Pages/Services";
 import Contact from "./Pages/Contact";
 import About from "./Pages/About";
-import Product from './Pages/Product';
+import Startup from './Pages/Startup';
 import Blog from './Pages/Blog';
 import Courses from "./Pages/Courses";
 import Workshop from "./Pages/Workshop";
@@ -35,7 +35,7 @@ export default function App() {
 
         <Route path="/workshop" element={<Workshop />} />
 
-        <Route path="/product" element={<Product />} />
+        <Route path="/startup" element={<Startup />} />
 
         <Route path="/blog" element={<Blog />} />
 

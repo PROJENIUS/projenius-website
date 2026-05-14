@@ -227,7 +227,7 @@ export default function Footer() {
                             </li>
 
                             <li>
-                                <Link to="/startup-supporter" className="footer-link">
+                                <Link to="/startup" className="footer-link">
                                     <Arrow />
                                     Startup Supporter
                                 </Link>

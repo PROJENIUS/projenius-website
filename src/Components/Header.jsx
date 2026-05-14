@@ -116,7 +116,7 @@ export default function Header() {
 
 
                             <li className="nav-item">
-                                <Link className="nav-link" to="/product">
+                                <Link className="nav-link" to="/startup">
                                     Startup Supporter
                                 </Link>
                             </li>
