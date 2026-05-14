@@ -1060,9 +1060,8 @@ body {
 }
 
 .startup-feature-icon i{
-    font-size:42px;
-    color:#ff4b61;
-}
+        color: #66c7dd;
+    font-size: 42px;
 
 .startup-feature-content h4{
     font-size:22px;
@@ -1127,8 +1126,8 @@ body {
 }
 
 .startup-accordion .accordion-button:not(.collapsed){
-    color:#ff4b61;
-    background:#fff;
+        color: #66c7dd;
+    background: #fff;
 }
 
 .startup-accordion .accordion-body{
