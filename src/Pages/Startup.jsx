@@ -888,6 +888,73 @@ export default function Startup() {
       </div>
 
     </section>
+     <section className="startup-cta-section">
+
+      <div className="container">
+
+        <div className="row g-4 align-items-stretch">
+
+          {/* LEFT CARD */}
+          <div className="col-lg-6">
+
+            <div className="startup-cta-card startup-cta-left">
+
+              <div className="startup-cta-content">
+
+                <h2>
+                  Ready to Build
+                  <br />
+                  Your Startup?
+                </h2>
+
+                <p>
+                  Let’s turn your vision into a powerful
+                  digital product.
+                </p>
+
+                <button className="startup-cta-btn">
+                  Book Free Consultation
+                </button>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          {/* RIGHT CARD */}
+          <div className="col-lg-6">
+
+            <div className="startup-cta-card startup-cta-right">
+
+              <div className="startup-cta-overlay"></div>
+
+              <div className="startup-cta-content">
+
+                <h2>
+                  Need quick help?
+                  <br />
+                  Contact us now
+                </h2>
+
+                <a
+                  href="/contact"
+                  className="startup-contact-btn"
+                >
+                  Contact Us
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
 
     </>
   );
