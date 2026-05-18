@@ -1,7 +1,7 @@
 /* ── TOP SPACER ── */
 .svc-spacer-top {
-    height: 20vh;
-    background: #0b1628;
+        background: #0b1628;
+    /* height: 20vh; */
 }
 
 /* ── SECTION ── */

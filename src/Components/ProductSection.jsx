@@ -38,6 +38,11 @@ const ProductSection = () => {
   return (
     <section className="tabs-section">
       <div className="container">
+        <div className="heading">
+          <span id="sub-heading">Our Product</span>
+          <h2 id="title">Innovative Products for Smart Future</h2>
+          <p>Explore our range of innovative solutions designed to empower your business.</p>
+        </div>
         <div className="tabs-header">
           {tabsData.map((tab, index) => (
             <button

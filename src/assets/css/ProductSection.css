@@ -1,11 +1,16 @@
 .tabs-section {
   background: #ffffff;
-  padding: 80px 20px;
+  padding: 60px 20px;
 }
 
 .container {
   max-width: 1200px;
   margin: auto;
+}
+
+.tabs-section .heading {
+  text-align: center;
+  margin-bottom: 60px;
 }
 
 .tabs-header {

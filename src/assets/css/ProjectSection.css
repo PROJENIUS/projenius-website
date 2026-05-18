@@ -11,7 +11,7 @@
 
 .nv-work-showcase {
     width: 100%;
-    padding: 100px 0;
+    padding: 60px 0;
     background: #ffffff;
 }
 
@@ -44,7 +44,7 @@
 /* SWIPER BASE FIX */
 
 .nv-work-showcase .swiper {
-    padding: 50px 0;
+    padding: 30px 0;
 }
 
 /* 🔥 REMOVE ALL SWIPER FADE / BLUR / SHADOW */
