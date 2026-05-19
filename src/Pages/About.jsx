@@ -11,56 +11,105 @@ export default function About() {
 
   return (
     <>
-      <div className="header-wrap" style={{backgroundImage:'linear-gradient(#1219297d), url(/images/projenius-banner.webp)'}}>
+      <div className="header-wrap" style={{ backgroundImage: 'linear-gradient(#1219297d), url(/images/projenius-banner.webp)' }}>
 
         <Header />
         <div className="container title-section">
           <h1 className="page-title">About Us</h1>
         </div>
       </div>
-      <section className="about-1 py-5 ">
-        <div className="row">
-          <div className="col-6">
-            <div className="wrapper">
-              <div className="container">
+      <section className="about-1 py-5">
+  <div className="container">
+    <div className="row align-items-center">
 
-                <div className="circle circle-development">
-                  <span>Development</span>
-                </div>
+      {/* Left Circle Design */}
+      <div className="col-lg-6 col-md-12">
+        <div className="wrapper">
 
-                <div className="circle circle-webdesign">
-                  <span>Web Design</span>
-                </div>
+          <div className="circle-container">
 
-                <div className="circle circle-mobileapps">
-                  <span>Mobile Apps<br />Design</span>
-                </div>
-
-              </div>
+            <div className="circle circle-development">
+              <span>Development</span>
             </div>
-          </div>
-          <div className="col-6">
-            <span id="sub-heading">Who we are</span>
-            <h2 className="section-title" id="title">Innovating Ideas Into Smart Solutions</h2>
-            <p className="desc">Projenius is a technology-driven startup dedicated to building innovative solutions in software development, artificial intelligence, IoT, and product engineering. We work with businesses, startups, and students to create impactful digital products that solve real-world problems through creativity, technology, and innovation.</p>
-            <div className="row">
-              <div className="col-6">
-                <ul className="icon-list">
-                  <li className="list"><i class="bi bi-check-circle-fill"></i>Innovative Software & AI Solutions</li>
-                  <li className="list"><i class="bi bi-check-circle-fill"></i>Training, Workshops & Mentorship</li>
-                </ul>
-              </div>
-              <div className="col-6">
-                <ul className="icon-list">
-                  <li className="list"><i class="bi bi-check-circle-fill"></i>Smart IoT & Product Development</li>
-                  <li className="list"><i class="bi bi-check-circle-fill"></i>Practical Technology for Real-World Impact</li>
-                </ul>
-              </div>
+
+            <div className="circle circle-webdesign">
+              <span>Web Design</span>
             </div>
-            <a href="#" class="btn"><span class="btn-content">Contact Us</span></a>
+
+            <div className="circle circle-mobileapps">
+              <span>Mobile Apps<br />Design</span>
+            </div>
+
           </div>
         </div>
-      </section>
+      </div>
+
+      {/* Right Content */}
+      <div className="col-lg-6 col-md-12">
+
+        <span id="sub-heading">Who we are</span>
+
+        <h2 className="section-title" id="title">
+          Innovating Ideas Into Smart Solutions
+        </h2>
+
+        <p className="desc">
+          Projenius is a technology-driven startup dedicated to building innovative
+          solutions in software development, artificial intelligence, IoT, and
+          product engineering. We work with businesses, startups, and students
+          to create impactful digital products that solve real-world problems
+          through creativity, technology, and innovation.
+        </p>
+
+        <div className="row">
+
+          <div className="col-md-6 col-12">
+
+            <ul className="icon-list">
+
+              <li className="list">
+                <i className="bi bi-check-circle-fill"></i>
+                Innovative Software & AI Solutions
+              </li>
+
+              <li className="list">
+                <i className="bi bi-check-circle-fill"></i>
+                Training, Workshops & Mentorship
+              </li>
+
+            </ul>
+
+          </div>
+
+          <div className="col-md-6 col-12">
+
+            <ul className="icon-list">
+
+              <li className="list">
+                <i className="bi bi-check-circle-fill"></i>
+                Smart IoT & Product Development
+              </li>
+
+              <li className="list">
+                <i className="bi bi-check-circle-fill"></i>
+                Practical Technology for Real-World Impact
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+        <a href="#" className="btn">
+          <span className="btn-content">Contact Us</span>
+        </a>
+
+      </div>
+
+    </div>
+  </div>
+</section>
       <section className="about-2 container">
         <div className="box-content">
           <div className="row">
@@ -95,7 +144,7 @@ export default function About() {
               <div className="row">
                 <div className="col-2">
                   <div className="icon">
-                    <i class="bi bi-lightbulb"></i>
+                    <i className="bi bi-lightbulb"></i>
                   </div>
                 </div>
                 <div className="col-9">
@@ -108,7 +157,7 @@ export default function About() {
               <div className="row">
                 <div className="col-2">
                   <div className="icon">
-                    <i class="bi bi-people"></i>
+                    <i className="bi bi-people"></i>
                   </div>
                 </div>
                 <div className="col-9">
@@ -121,7 +170,7 @@ export default function About() {
               <div className="row">
                 <div className="col-2">
                   <div className="icon">
-                    <i class="bi bi-diagram-3"></i>
+                    <i className="bi bi-diagram-3"></i>
                   </div>
                 </div>
                 <div className="col-9">
@@ -133,7 +182,7 @@ export default function About() {
           </div>
         </div>
       </section>
-      <TeamSection2 /> 
+      <TeamSection2 />
       <section className="about-4 py-5">
         <div className="container">
           <div className="row">
@@ -148,89 +197,89 @@ export default function About() {
           </div>
         </div>
       </section>
-     <section className="awards-section py-5">
-  <div className="container">
+      <section className="awards-section py-5">
+        <div className="container">
 
-    <div className="text-center mb-5">
-      <span id="sub-heading">Achievements</span>
-      <h2 className="section-title" id="title">Awards & Recognition</h2>
+          <div className="text-center mb-5">
+            <span id="sub-heading">Achievements</span>
+            <h2 className="section-title" id="title">Awards & Recognition</h2>
 
-      <p className="section-desc awards-desc">
-        Celebrating achievements, innovation, creativity, and milestones that showcase our passion for technology, design, and impactful digital solutions.
-      </p>
-    </div>
+            <p className="section-desc awards-desc">
+              Celebrating achievements, innovation, creativity, and milestones that showcase our passion for technology, design, and impactful digital solutions.
+            </p>
+          </div>
 
-    <div className="awards-masonry">
+          <div className="awards-masonry">
 
-      <div className="award-item">
-        <img src="images/gallery-1.webp" alt="Award 1" />
+            <div className="award-item">
+              <img src="images/gallery-1.webp" alt="Award 1" />
 
-        <div className="award-content">
-          <h4 className="award-title">Honouring Excellence</h4>
-          <p className="award-subtitle">
-            Celebrating excellence, innovation, and success through achievements.
-          </p>
+              <div className="award-content">
+                <h4 className="award-title">Honouring Excellence</h4>
+                <p className="award-subtitle">
+                  Celebrating excellence, innovation, and success through achievements.
+                </p>
+              </div>
+            </div>
+
+            <div className="award-item">
+              <img src="images/gallery-2.webp" alt="Award 2" />
+
+              <div className="award-content">
+                <h4 className="award-title">Achievement Recognition</h4>
+                <p className="award-subtitle">
+                  Honoring talented students for achievements, excellence, and dedication.
+                </p>
+              </div>
+            </div>
+
+            <div className="award-item">
+              <img src="images/gallery-3.webp" alt="Award 3" />
+
+              <div className="award-content">
+                <h4 className="award-title">Career Guidance Session</h4>
+                <p className="award-subtitle">
+                  Industry experts sharing insights, innovation, and real-world knowledge.
+                </p>
+              </div>
+            </div>
+
+            <div className="award-item">
+              <img src="images/gallery-4.webp" alt="Award 4" />
+
+              <div className="award-content">
+                <h4 className="award-title">Student Mentoring Program</h4>
+                <p className="award-subtitle">
+                  Guiding students with mentorship, support, and career-focused learning.
+                </p>
+              </div>
+            </div>
+
+            <div className="award-item">
+              <img src="images/gallery-5.webp" alt="Award 5" />
+
+              <div className="award-content">
+                <h4 className="award-title">SRM Hands-on Workshop</h4>
+                <p className="award-subtitle">
+                  Providing practical technical training to build industry-ready skills.
+                </p>
+              </div>
+            </div>
+
+            <div className="award-item">
+              <img src="images/gallery-6.webp" alt="Award 6" />
+
+              <div className="award-content">
+                <h4 className="award-title">Interactive Learning Session</h4>
+                <p className="award-subtitle">
+                  Hands-on lab sessions designed to improve practical learning experience.
+                </p>
+              </div>
+            </div>
+
+          </div>
         </div>
-      </div>
-
-      <div className="award-item">
-        <img src="images/gallery-2.webp" alt="Award 2" />
-
-        <div className="award-content">
-          <h4 className="award-title">Achievement Recognition</h4>
-          <p className="award-subtitle">
-            Honoring talented students for achievements, excellence, and dedication.
-          </p>
-        </div>
-      </div>
-
-      <div className="award-item">
-        <img src="images/gallery-3.webp" alt="Award 3" />
-
-        <div className="award-content">
-          <h4 className="award-title">Career Guidance Session</h4>
-          <p className="award-subtitle">
-            Industry experts sharing insights, innovation, and real-world knowledge.
-          </p>
-        </div>
-      </div>
-
-      <div className="award-item">
-        <img src="images/gallery-4.webp" alt="Award 4" />
-
-        <div className="award-content">
-          <h4 className="award-title">Student Mentoring Program</h4>
-          <p className="award-subtitle">
-            Guiding students with mentorship, support, and career-focused learning.
-          </p>
-        </div>
-      </div>
-
-      <div className="award-item">
-        <img src="images/gallery-5.webp" alt="Award 5" />
-
-        <div className="award-content">
-          <h4 className="award-title">SRM Hands-on Workshop</h4>
-          <p className="award-subtitle">
-            Providing practical technical training to build industry-ready skills.
-          </p>
-        </div>
-      </div>
-
-      <div className="award-item">
-        <img src="images/gallery-6.webp" alt="Award 6" />
-
-        <div className="award-content">
-          <h4 className="award-title">Interactive Learning Session</h4>
-          <p className="award-subtitle">
-           Hands-on lab sessions designed to improve practical learning experience.
-          </p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
+      </section>
       <TestimonialSection />
       <FooterTopSection />
     </>
