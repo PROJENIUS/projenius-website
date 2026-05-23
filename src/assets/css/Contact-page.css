@@ -98,24 +98,7 @@ textarea.custom-contact-input{
     border-color: #22d3ee;
 }
 
-.send-btn{
-    background: linear-gradient(90deg,#06b6d4,#2563eb);
-    border: none;
-    color: #fff;
-    padding: 16px 34px;
-    border-radius: 50px;
 
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-
-    font-weight: 600;
-    transition: 0.3s;
-}
-
-.send-btn:hover{
-    transform: translateY(-3px);
-}
 
 /* MAP */
 

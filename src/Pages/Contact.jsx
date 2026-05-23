@@ -127,7 +127,7 @@ export default function Contact() {
                     </div>
 
                     <div className="col-12">
-                      <button className="send-btn">
+                      <button className="btn">
                         Send Message
                         <i className="bi bi-arrow-up-right"></i>
                       </button>

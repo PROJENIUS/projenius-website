@@ -215,7 +215,7 @@ export default function CourseDetails() {
                       <div className="course-bottom">
                         <h5>{course.price}</h5>
 
-                        <button>View More</button>
+                        <button className="btn">View More</button>
                       </div>
                     </div>
                   </div>

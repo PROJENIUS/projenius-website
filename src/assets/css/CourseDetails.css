@@ -192,55 +192,6 @@
   margin-bottom: 24px;
 }
 
-.course-price .btn {
-    position: relative;
-    overflow: hidden;
-    height: 3rem;
-    padding: 10px 20px;
-    border-radius: 1.5rem;
-    background: #3d3a4e;
-    background-size: 400%;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    font-weight: 500;
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
-    white-space: nowrap;
-}
-
-.course-price .btn:hover {
-    transform: translateY(-3px) scale(1.03);
-    box-shadow: 0 10px 30px rgba(102, 199, 221, 0.35);
-}
-
-.course-price .btn:active {
-    transform: translateY(0) scale(0.98);
-}
-
-.course-price .btn:hover::before {
-    transform: scaleX(1);
-}
-
-.course-price .btn .btn-content {
-    position: relative;
-    z-index: 1;
-    font-size: 18px;
-}
-
-.course-price .btn::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: scaleX(0);
-    transform-origin: 0 50%;
-    width: 100%;
-    height: inherit;
-    border-radius: inherit;
-    background: #66C7DD;
-    transition: all 0.457s cubic-bezier(0.22, 1, 0.36, 1);
-}
-
 /* =========================================
    RELATED COURSE
 ========================================= */
@@ -300,15 +251,6 @@
   margin-bottom: 0;
 }
 
-.course-bottom button {
-  border: none;
-  background: rgba(0, 180, 216, 0.1);
-  color: #00b4d8;
-  padding: 10px 18px;
-  border-radius: 50px;
-  font-size: 14px;
-  font-weight: 600;
-}
 
 /* =========================================
    RESPONSIVE

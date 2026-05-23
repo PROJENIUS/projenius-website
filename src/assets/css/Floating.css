@@ -21,19 +21,18 @@
 }
 
 .scroll-top-btn {
-    position: fixed;
+        position: fixed;
     right: 20px;
     bottom: 20px;
     width: 55px;
     height: 55px;
     border: none;
     border-radius: 50%;
-    background: #000;
-    color: #fff;
+    background: linear-gradient(135deg, #00bfff, #52d6ff);
+    color: #121929;
     font-size: 22px;
     cursor: pointer;
     z-index: 99999;
-
     opacity: 0;
     visibility: hidden;
     transition: 0.3s;

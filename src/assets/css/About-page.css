@@ -110,46 +110,7 @@
 
 /* Button */
 
-.about-1 .btn {
-    position: relative;
-    overflow: hidden;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 14px 28px;
-    border-radius: 50px;
-    background: #121929;
-    color: #ffffff;
-    text-decoration: none;
-    transition: 0.3s ease;
-    margin-top: 10px;
-}
 
-.about-1 .btn .btn-content {
-    position: relative;
-    z-index: 2;
-    font-size: 16px;
-    font-weight: 500;
-}
-
-.about-1 .btn::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: #66c7dd;
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: 0.4s ease;
-    border-radius: inherit;
-}
-
-.about-1 .btn:hover::before {
-    transform: scaleX(1);
-}
-
-.about-1 .btn:hover {
-    color: #121929;
-}
 
 /* =========================================
    ABOUT SECTION - 2
@@ -278,39 +239,7 @@
     margin-bottom: 20px;
 }
 
-.about-4 .btn {
-    position: relative;
-    overflow: hidden;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 14px 28px;
-    border-radius: 50px;
-    background: #121929;
-    color: #ffffff;
-    text-decoration: none;
-    transition: 0.3s ease;
-}
 
-.about-4 .btn .btn-content {
-    position: relative;
-    z-index: 2;
-}
-
-.about-4 .btn::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: #66c7dd;
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: 0.4s ease;
-    border-radius: inherit;
-}
-
-.about-4 .btn:hover::before {
-    transform: scaleX(1);
-}
 
 /* =========================================
    AWARDS SECTION
