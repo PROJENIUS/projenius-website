@@ -5,6 +5,7 @@ import '../assets/css/About-page.css';
 import TeamSection2 from "../Components/TeamSection2";
 import TestimonialSection from "../Components/TestimonialSection";
 import FooterTopSection from "../Components/FooterTopSection";
+import MagazineSection from "../Components/Magazine";
 
 
 export default function About() {
@@ -183,20 +184,7 @@ export default function About() {
         </div>
       </section>
       <TeamSection2 />
-      <section className="about-4 py-5">
-        <div className="container">
-          <div className="row">
-            <div className="col-6 img-area">
-              <img src="images/magazine.png" alt="" className="img-mag" />
-            </div>
-            <div className="col-6 content-area">
-              <h2 id="title">We Create With Purpose</h2>
-              <p className="section-desc">A collective of designers, thinkers, and makers dedicated to crafting meaningful experiences, bringing ideas to life through creativity, innovation, and collaboration while shaping inspiring visual stories and memorable interactions that reflect our passion, vision, and journey through every page we create and share.</p>
-              <a href="images/Shri-OS.pdf" class="btn"><span class="btn-content"><i class="bi bi-download me-3"></i>Download PDF</span></a>
-            </div>
-          </div>
-        </div>
-      </section>
+     <MagazineSection />
       <section className="awards-section py-5">
         <div className="container">
 

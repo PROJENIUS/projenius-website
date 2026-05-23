@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "../assets/css/Footer.css";
 import "../assets/css/Floating.css";
-import ChatBot from "./ChatBot";
+import ChatBot from "../Components/ChatBot";
 
 const Arrow = () => (
     <span className="footer-arrow">
