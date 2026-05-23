@@ -213,8 +213,11 @@
 }
 
 .outline-btn:hover {
-    background: #66c7dd;
+     background: linear-gradient(135deg, #00bfff, #52d6ff);
     color: #000;
+    border: 1px solid transparent;
+    outline: none;
+
 }
 
 /* =========================

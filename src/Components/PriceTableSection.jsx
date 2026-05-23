@@ -74,7 +74,7 @@ const PricingSection = () => {
                 </div>
               </div>
 
-              <button className="choose-btn">
+              <button className="btn" style={{width:'100%'}}>
                 Choose Package <i className="bi bi-arrow-right"></i>
               </button>
             </div>
@@ -121,7 +121,7 @@ const PricingSection = () => {
                 </div>
               </div>
 
-              <button className="choose-btn outline-btn">
+              <button className="btn outline-btn" style={{width:'100%', border:'2px solid #fff',}}>
                 Choose Package <i className="bi bi-arrow-right"></i>
               </button>
             </div>

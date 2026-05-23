@@ -40,7 +40,7 @@
 }
 
 .tab-btn.active {
-  background: linear-gradient(135deg, #10c9ff, #6554ff);
+  background: linear-gradient(135deg, #00bfff, #52d6ff);
   color: #ffffff;
   border-color: transparent;
   box-shadow: 0 10px 25px rgba(16, 201, 255, 0.2);
@@ -82,7 +82,7 @@
   padding: 14px 32px;
   border: none;
   border-radius: 50px;
-  background: linear-gradient(135deg, #10c9ff, #6554ff);
+  background: linear-gradient(135deg, #00bfff, #52d6ff);
   color: #ffffff;
   font-size: 15px;
   font-weight: 600;

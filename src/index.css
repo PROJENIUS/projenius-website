@@ -62,3 +62,18 @@ h1.page-title {
     height: 468px;
     border-bottom: 8px solid #61c9e1;
 }
+
+.btn {
+    background: linear-gradient(135deg, #52d6ff, #00bfff);
+    color: #081120;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    font-weight: 400;
+}
+
+.btn:hover{
+    background: linear-gradient(135deg, #00bfff, #52d6ff);
+}
