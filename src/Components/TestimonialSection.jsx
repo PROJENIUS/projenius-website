@@ -11,32 +11,32 @@ import 'swiper/css/navigation';
 const testimonialData = [
     {
         id: 1,
-        name: "Eleanor Pena",
-        role: "Senior Director",
+        name: "Navajith Senthilkumar",
+        role: "Intern",
         profile:
-            "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=400",
+            "/images/testimonial-1.webp",
         review:
-            "Turn your ideas into reality with our exceptional software design and development team. Join the growing list of clients who have leveraged our expertise to scale their businesses."
+            "Currently I'm working here as an intern and having a great experience over here. Truly a great atmosphere to work and learn ✨"
     },
 
     {
         id: 2,
-        name: "Jacob Jones",
-        role: "UI/UX Designer",
+        name: "SWATI A S EC student",
+        role: "Intern",
         profile:
-            "https://images.unsplash.com/photo-1502685104226-ee32379fefbe?q=80&w=400",
+            "/images/testimonial-2.webp",
         review:
-            "Their innovative solutions helped us improve business growth and customer engagement. The team delivered exactly what we envisioned with excellent communication."
+            "Such a hardworking team, not just working, but constantly building innovations. Keep rocking and continue your amazing service 💫💫"
     },
 
     {
         id: 3,
-        name: "Leslie Alexander",
-        role: "Marketing Head",
+        name: "Aruna Sree N",
+        role: "Client",
         profile:
-            "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=400",
+            "/images/testimonial-3.webp",
         review:
-            "Working with this company was a great experience. Their creative process and technical expertise transformed our ideas into a scalable platform."
+            "I had a very positive experience with ProJenius. The project was delivered on time with great attention to detail. The team was highly professional, responsive, and ensured everything was handled efficiently. Their commitment to deadlines is truly commendable."
     }
 ];
 

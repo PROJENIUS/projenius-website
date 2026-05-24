@@ -12,49 +12,49 @@ export default function ProjectSection() {
 
   const projects = [
     {
-      title: "Brand Identity",
-      subtitle: "Creative Business Solution",
+      title: "Helminth Egg Detection Poster",
+      subtitle: "Medical Conference Poster",
       description:
-        "We build strong digital branding solutions with modern creativity, strategy and innovative user focused business experiences.",
+        "Scientific poster on helminth egg detection in dog samples highlighting diagnosis and zoonotic risks worldwide. now!",
       rating: 5,
       image:
-        "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1200&auto=format&fit=crop",
+        "/images/project-image-1.webp",
     },
     {
-      title: "Marketing Strategy",
-      subtitle: "Digital Growth Planning",
+      title: "AI-Powered Water Health Monitoring",
+      subtitle: "Software",
       description:
         "Powerful marketing strategies designed to improve customer engagement, online visibility and long term business growth successfully.",
       rating: 4,
       image:
-        "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop",
+        "/images/project-image-2.webp",
     },
     {
-      title: "Corporate Meeting",
-      subtitle: "Professional Consulting",
+      title: "Road Hazard Detection",
+      subtitle: "Software",
       description:
-        "Professional consulting services helping companies improve communication, teamwork and effective decision making through smart planning.",
+        "AI-based accident detection system with instant emergency GPS alerts and real-time response tracking.",
       rating: 5,
       image:
-        "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200&auto=format&fit=crop",
+        "/images/project-image-3.webp",
     },
     {
-      title: "Creative Team",
-      subtitle: "Business Collaboration",
+      title: "Smart Waste Management",
+      subtitle: "Software",
       description:
-        "Creative collaboration between talented professionals delivering innovative solutions for startups and enterprises.",
+        "Smart waste segregation system using sensors for automatic wet and dry waste classification.",
       rating: 4,
       image:
-        "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop",
+        "/images/project-image-4.webp",
     },
     {
-      title: "Office Interior",
-      subtitle: "Modern Workspace Design",
+      title: "Autonomous Follower Robot",
+      subtitle: "Hardware",
       description:
-        "Modern office interiors crafted with premium aesthetics and productivity focused collaborative working environments.",
+        "Intelligent follower robot with obstacle avoidance for smart logistics and automated material transportation.",
       rating: 5,
       image:
-        "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1200&auto=format&fit=crop",
+        "/images/project-image-5.webp",
     },
   ];
 

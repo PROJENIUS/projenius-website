@@ -3,33 +3,27 @@ import "../assets/css/ProductSection.css";
 
 const tabsData = [
   {
-    title: "Web Development",
+    title: "EduTech Platform",
     image:
       "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
     description:
       "Modern responsive websites with premium UI and smooth performance.",
   },
   {
-    title: "AI Solutions",
+    title: "IoT Kit",
     image:
       "https://images.unsplash.com/photo-1677442136019-21780ecad995",
     description:
       "Smart AI-powered systems for automation and business growth.",
   },
   {
-    title: "Digital Marketing",
+    title: "AI-Powered Nut Sorting & Grading System",
     image:
       "https://images.unsplash.com/photo-1552664730-d307ca884978",
     description:
       "Creative marketing strategies to improve online visibility.",
   },
-  {
-    title: "Analytics",
-    image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
-    description:
-      "Track business performance using advanced analytics dashboards.",
-  },
+  
 ];
 
 const ProductSection = () => {
