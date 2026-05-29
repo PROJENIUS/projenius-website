@@ -1,17 +1,49 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import Header from "../Components/Header";
 import "../index.css";
 import "../assets/css/Contact-page.css";
 
 export default function Contact() {
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_zyx94vi",
+        "template_8as1pq2",
+        form.current,
+        "--8wWEAHJihOuV3Na"
+      )
+      .then(
+        () => {
+          alert("Message Sent Successfully!");
+          e.target.reset();
+        },
+        (error) => {
+          alert("Failed to send message");
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <>
-      <section className="header-wrap" style={{backgroundImage:'linear-gradient(#1219297d), url(/images/projenius-banner.webp)'}}>
+      <section
+        className="header-wrap"
+        style={{
+          backgroundImage:
+            "linear-gradient(#1219297d), url(/images/projenius-banner.webp)",
+        }}
+      >
         <Header />
+
         <div className="container title-section">
           <h1 className="page-title">Contact Us</h1>
         </div>
-
       </section>
 
       {/* CONTACT SECTION */}
@@ -46,7 +78,12 @@ export default function Contact() {
 
                   <div>
                     <h5>Phone</h5>
-                    <span>+91 98765 43210</span>
+
+                    <span>
+                      <a href="tel:+918925450473">
+                        +91 89254 50473
+                      </a>
+                    </span>
                   </div>
                 </div>
 
@@ -57,7 +94,12 @@ export default function Contact() {
 
                   <div>
                     <h5>Email</h5>
-                    <span>info@projenius.com</span>
+
+                    <span>
+                      <a href="mailto:teamprojenius2025@gmail.com">
+                        teamprojenius2025@gmail.com
+                      </a>
+                    </span>
                   </div>
                 </div>
 
@@ -82,29 +124,34 @@ export default function Contact() {
 
                 <h3>Send Message</h3>
 
-                <form>
+                <form ref={form} onSubmit={sendEmail}>
 
                   <div className="row">
 
                     <div className="col-md-6 mb-4">
                       <input
                         type="text"
+                        name="user_name"
                         className="form-control custom-contact-input"
                         placeholder="Your Name"
+                        required
                       />
                     </div>
 
                     <div className="col-md-6 mb-4">
                       <input
                         type="email"
+                        name="user_email"
                         className="form-control custom-contact-input"
                         placeholder="Email Address"
+                        required
                       />
                     </div>
 
                     <div className="col-md-6 mb-4">
                       <input
                         type="text"
+                        name="user_phone"
                         className="form-control custom-contact-input"
                         placeholder="Phone Number"
                       />
@@ -113,21 +160,25 @@ export default function Contact() {
                     <div className="col-md-6 mb-4">
                       <input
                         type="text"
+                        name="subject"
                         className="form-control custom-contact-input"
                         placeholder="Subject"
+                        required
                       />
                     </div>
 
                     <div className="col-12 mb-4">
                       <textarea
                         rows="6"
+                        name="message"
                         className="form-control custom-contact-input"
                         placeholder="Write Your Message"
+                        required
                       ></textarea>
                     </div>
 
                     <div className="col-12">
-                      <button className="btn">
+                      <button type="submit" className="btn">
                         Send Message
                         <i className="bi bi-arrow-up-right"></i>
                       </button>

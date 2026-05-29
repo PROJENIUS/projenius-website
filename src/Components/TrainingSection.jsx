@@ -20,8 +20,8 @@ export default function TraningSection(){
                 <img src="/images/iot-workshop.png" alt="" />
 
                 <div className="training-content">
-                    <span>Various Analysis</span>
-                    <h4>Business Intelligence</h4>
+                    <span>Future Ready</span>
+                    <h4>Career Guidance</h4>
                 </div>
             </div>
 
@@ -29,8 +29,8 @@ export default function TraningSection(){
                 <img src="/images/software-developement-training.png" alt="" />
 
                 <div className="training-content">
-                    <span>Various Analysis</span>
-                    <h4>Business Consulting</h4>
+                    <span>Skill Growth</span>
+                    <h4>Mentoring Program</h4>
                 </div>
             </div>
 
@@ -43,8 +43,8 @@ export default function TraningSection(){
                 <img src="/images/software-developement-training.png" alt="" />
 
                 <div className="training-content">
-                    <span>Various Analysis</span>
-                    <h4>Consulting Success</h4>
+                    <span>Smart Innovation</span>
+                    <h4>IoT Workshop</h4>
                 </div>
             </div>
 
@@ -52,8 +52,8 @@ export default function TraningSection(){
                 <img src="/images/iot-workshop.png" alt="" />
 
                 <div className="training-content">
-                    <span>Various Analysis</span>
-                    <h4>Performing Market</h4>
+                    <span>Coding Skills</span>
+                    <h4>Programming Workshop</h4>
                 </div>
             </div>
 

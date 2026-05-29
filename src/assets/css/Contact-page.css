@@ -64,6 +64,10 @@
 .contact-detail-item span{
     color: #5b6475;
 }
+.contact-detail-item span a{
+    color: #5b6475;
+    text-decoration: none;
+}
 
 /* FORM */
 
