@@ -273,7 +273,7 @@ export default function Footer() {
                                 </div>
 
                                 <div>
-                                    teamprojenius2025@gmail.com
+                                    <a href="mailto:teamprojenius2025@gmail.com">teamprojenius2025@gmail.com</a> 
                                 </div>
 
                             </div>
@@ -285,7 +285,7 @@ export default function Footer() {
                                 </div>
 
                                 <div>
-                                    +91 90254 76322
+                                    <a href="tel:+91 90254 76322">+91 90254 76322</a>
                                 </div>
 
                             </div>

@@ -22,11 +22,14 @@ export default function ServicesSection() {
     const cardRefs = useRef([]);
 
     useEffect(() => {
+
+        // overflow fix
         let el = cardRefs.current[0];
         while (el && el !== document.body) {
             el = el.parentElement;
             if (!el) break;
             const style = window.getComputedStyle(el);
+
             if (
                 style.overflow === "hidden" ||
                 style.overflow === "auto" ||
@@ -37,6 +40,27 @@ export default function ServicesSection() {
                 el.style.overflow = "visible";
             }
         }
+
+        // scroll reveal animation
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("show-card");
+                    }
+                });
+            },
+            {
+                threshold: 0.2,
+            }
+        );
+
+        cardRefs.current.forEach((card) => {
+            if (card) observer.observe(card);
+        });
+
+        return () => observer.disconnect();
+
     }, []);
 
     return (
@@ -48,16 +72,21 @@ export default function ServicesSection() {
                 {/* LEFT */}
                 <div className="svc-left">
                     <span className="svc-sub" id="sub-heading">Our Services</span>
+
                     <h2 className="svc-title" id="title">
                         Smart Solutions for Modern Digital Needs
                     </h2>
+
                     <p className="svc-para">
                         Innovative services in AI, IoT, web, mobile apps, design,
                         training, and smart product development solutions.
                     </p>
+
                     <a href="#" className="btn">
-                                <span className="btn-content">Explore More Services</span>
-                            </a>
+                        <span className="btn-content">
+                            Explore More Services
+                        </span>
+                    </a>
                 </div>
 
                 {/* RIGHT */}
@@ -68,11 +97,22 @@ export default function ServicesSection() {
                             className={`svc-card svc-card-${index + 1}`}
                             ref={(el) => (cardRefs.current[index] = el)}
                         >
-                            <img src={service.image} alt={service.title} className="svc-img" />
+                            <img
+                                src={service.image}
+                                alt={service.title}
+                                className="svc-img"
+                            />
+
                             <div className="svc-overlay" />
+
                             <div className="svc-content">
-                                <h3 className="svc-card-title">{service.title}</h3>
-                                <a href="/" className="svc-read-more">Read More →</a>
+                                <h3 className="svc-card-title">
+                                    {service.title}
+                                </h3>
+
+                                <a href="/" className="svc-read-more">
+                                    Read More →
+                                </a>
                             </div>
                         </div>
                     ))}

@@ -127,3 +127,87 @@
 .svc-read-more:hover {
     letter-spacing: 1px;
 }
+
+/* =========================
+   CARD ANIMATION
+========================= */
+
+.svc-card {
+    opacity: 0;
+    transform: translateY(100px) scale(0.95);
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+/* show animation */
+.svc-card.show-card {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+/* floating hover effect */
+.svc-card:hover {
+    transform: translateY(-12px) scale(1.02);
+}
+
+/* image zoom */
+.svc-img {
+    transition: transform 0.8s ease;
+}
+
+.svc-card:hover .svc-img {
+    transform: scale(1.08);
+}
+
+/* content animation */
+.svc-content {
+    transition: transform 0.5s ease;
+}
+
+.svc-card:hover .svc-content {
+    transform: translateY(-6px);
+}
+
+/* =========================
+   HEADING ANIMATION
+========================= */
+
+.svc-sub,
+.svc-title,
+.svc-para,
+.btn {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeUp 0.8s ease forwards;
+}
+
+/* delay for premium stagger effect */
+.svc-sub {
+    animation-delay: 0.2s;
+}
+
+.svc-title {
+    animation-delay: 0.5s;
+}
+
+.svc-para {
+    animation-delay: 0.8s;
+}
+
+.btn {
+    animation-delay: 1.1s;
+}
+
+/* animation keyframes */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
