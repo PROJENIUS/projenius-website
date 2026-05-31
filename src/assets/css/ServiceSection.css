@@ -211,3 +211,139 @@
         transform: translateY(0);
     }
 }
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+/* Large Tablets */
+@media (max-width: 991px) {
+
+    .svc-section {
+        flex-direction: column;
+        padding: 60px 5%;
+    }
+
+    .svc-left {
+        width: 100%;
+        position: relative;
+        top: unset;
+        padding-right: 0;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .svc-right {
+        width: 100%;
+    }
+
+    .svc-title {
+        font-size: 36px;
+    }
+
+    .svc-card {
+        height: 380px;
+        margin-bottom: 70px;
+    }
+
+    .svc-content {
+        left: 24px;
+        bottom: 24px;
+    }
+
+    .svc-card-title {
+        font-size: 24px;
+    }
+
+    /* remove stacked sticky effect on tablet */
+    .svc-card-1,
+    .svc-card-2,
+    .svc-card-3,
+    .svc-card-4 {
+        top: unset;
+        position: relative;
+    }
+}
+
+
+/* Mobile Devices */
+@media (max-width: 767px) {
+
+    .svc-section {
+        padding: 50px 20px;
+    }
+
+    .svc-left {
+        margin-bottom: 40px;
+    }
+
+    .svc-sub {
+        font-size: 11px;
+        letter-spacing: 2px;
+    }
+
+    .svc-title {
+        font-size: 28px;
+        line-height: 1.3;
+    }
+
+    .svc-para {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .svc-card {
+        height: 300px;
+        border-radius: 16px;
+        margin-bottom: 40px;
+    }
+
+    .svc-content {
+        left: 18px;
+        bottom: 18px;
+    }
+
+    .svc-card-title {
+        font-size: 20px;
+        margin-bottom: 6px;
+    }
+
+    .svc-read-more {
+        font-size: 14px;
+    }
+
+    .svc-img {
+        object-position: center;
+    }
+}
+
+
+/* Small Mobile */
+@media (max-width: 480px) {
+
+    .svc-section {
+        padding: 40px 16px;
+    }
+
+    .svc-title {
+        font-size: 24px;
+    }
+
+    .svc-card {
+        height: 260px;
+    }
+
+    .svc-content {
+        left: 16px;
+        bottom: 16px;
+    }
+
+    .svc-card-title {
+        font-size: 18px;
+    }
+
+    .btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
