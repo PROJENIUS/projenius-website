@@ -11,8 +11,8 @@ import FooterTopSection from "../Components/FooterTopSection";
 import TestimonialSection from "../Components/TestimonialSection";
 import PriceTableSection from "../Components/PriceTableSection";
 
-
 export default function Home() {
+
   return (
     <div>
     <HeroSection /> 

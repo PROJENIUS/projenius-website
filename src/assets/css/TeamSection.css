@@ -303,3 +303,21 @@
         font-size: 16px;
     }
 }
+
+
+@media(max-width:482px){
+    .team-section::before{
+        top: -130px;
+        width: 102vw;
+    }
+
+    .team-section .third {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.team-section .section-desc{
+    text-align: center;
+}
+}

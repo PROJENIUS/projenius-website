@@ -306,3 +306,9 @@
         transform:scale(1.08);
     }
 }
+
+@media (max-width:482px){
+    .counter-box{
+        min-width: 132px;
+    }
+}

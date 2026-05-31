@@ -28,7 +28,7 @@ export default function AboutSection() {
             <div className="row">
 
                 {/* LEFT */}
-                <div className="col-6 reveal">
+                <div className="col-lg-6 col-12 reveal">
                     <div className="about-left reveal">
                         <div className="about-left-inner">
 
@@ -39,7 +39,7 @@ export default function AboutSection() {
                                 </div>
 
                                 <div className="about-left-secondary-img">
-                                    <img src="/images/about-secondary-img.png" alt="" />
+                                    <img src="/images/about-secondary-img.png" alt=""  className="second-img"/>
                                 </div>
 
                             </div>
@@ -69,7 +69,7 @@ export default function AboutSection() {
                 </div>
 
                 {/* RIGHT */}
-                <div className="col-6 ab-2 reveal">
+                <div className="col-lg-6 col-12 ab-2 reveal">
 
                     <span className="about" id="sub-heading">Who we are</span>
 
