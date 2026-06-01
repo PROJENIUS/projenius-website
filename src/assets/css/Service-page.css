@@ -180,3 +180,15 @@ i.bi.bi-code-slash.icon {
 .service-1.row.r2 {
     margin-top: 115px;
 }
+
+
+@media (max-width:482px){
+  .row.mt-5 {
+    display: flex;
+    flex-direction: column-reverse;
+}
+  .last {
+    display: flex;
+    flex-direction: column-reverse;
+}
+}
