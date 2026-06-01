@@ -114,17 +114,17 @@ export default function About() {
       <section className="about-2 container">
         <div className="box-content">
           <div className="row">
-            <div className="col-4">
+            <div className="col-lg-4 col-md-4 col-sm-12">
               <h2 className="counter-number">25k+</h2>
               <h6 className="counter-title">Project Completed</h6>
               <p className="counter-description">Completing a mobile application development</p>
             </div>
-            <div className="col-4">
+            <div className="col-lg-4 col-md-4 col-sm-12">
               <h2 className="counter-number">25k+</h2>
               <h6 className="counter-title">Project Completed</h6>
               <p className="counter-description">Completing a mobile application development</p>
             </div>
-            <div className="col-4">
+            <div className="col-lg-4 col-md-4 col-sm-12">
               <h2 className="counter-number">25k+</h2>
               <h6 className="counter-title">Project Completed</h6>
               <p className="counter-description">Completing a mobile application development</p>
@@ -134,7 +134,7 @@ export default function About() {
       </section>
       <section className="about-3 container py-5">
         <div className="row">
-          <div className="col-6">
+          <div className="col-lg-6 col-12">
             <span id="sub-heading">Why Choose us?</span>
             <h2 className="section-title" id="title">Why Projenius Stands Out in Innovation</h2>
             <p className="section-desc">We combine innovation, technology, and practical expertise to deliver reliable solutions, quality services, and impactful learning experiences for everyone.</p>
@@ -143,12 +143,12 @@ export default function About() {
           <div className="col-6 why-right">
             <div className="icon-box">
               <div className="row">
-                <div className="col-2">
+                <div className="col-3 col-sm-2">
                   <div className="icon">
                     <i className="bi bi-lightbulb"></i>
                   </div>
                 </div>
-                <div className="col-9">
+                <div className="col-9 col-sm-10">
                   <h3 className="icon-box-heading">Innovative Technology Solutions</h3>
                   <p className="icon-box-desc">We build smart and scalable solutions using AI, IoT, web, and mobile technologies for real-world applications.</p>
                 </div>
@@ -156,12 +156,12 @@ export default function About() {
             </div>
             <div className="icon-box mt-3">
               <div className="row">
-                <div className="col-2">
+                <div className="col-3 col-sm-2">
                   <div className="icon">
                     <i className="bi bi-people"></i>
                   </div>
                 </div>
-                <div className="col-9">
+                <div className="col-9 col-sm-10">
                   <h3 className="icon-box-heading">Learning & Mentorship Support</h3>
                   <p className="icon-box-desc">We empower students through workshops, training programs, academic guidance, and hands-on technical learning experiences.</p>
                 </div>
@@ -169,12 +169,12 @@ export default function About() {
             </div>
             <div className="icon-box mt-3">
               <div className="row">
-                <div className="col-2">
+                <div className="col-3 col-sm-2">
                   <div className="icon">
                     <i className="bi bi-diagram-3"></i>
                   </div>
                 </div>
-                <div className="col-9">
+                <div className="col-9 col-sm-10">
                   <h3 className="icon-box-heading">Industry-Focused Development</h3>
                   <p className="icon-box-desc">Our team develops practical digital products and hardware systems tailored for businesses, startups, and industries.</p>
                 </div>

@@ -518,3 +518,282 @@
         font-size: 13px;
     }
 }
+/* =========================================
+   EXTRA RESPONSIVE FIXES
+========================================= */
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ABOUT 1 */
+
+.about-1 .container,
+.about-2.container,
+.about-3.container {
+    width: 100%;
+}
+
+.about-1 .wrapper {
+    width: 100%;
+}
+
+.about-1 .circle-container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Prevent zoom overlap */
+
+@media (min-width: 1400px) {
+
+    .about-1 .circle-container {
+        width: 480px;
+        height: 480px;
+    }
+
+    .about-1 .circle {
+        width: 200px;
+        height: 200px;
+    }
+
+    .about-1 .circle-webdesign {
+        top: 130px;
+        left: 130px;
+    }
+
+    .about-1 .circle-mobileapps {
+        top: 260px;
+        left: 260px;
+    }
+
+    .about-1 p.desc,
+    .about-3 p.section-desc {
+        max-width: 95%;
+    }
+}
+
+/* ABOUT 2 */
+
+.about-2 {
+    width: 100%;
+}
+
+.about-2 .row {
+    row-gap: 25px;
+}
+
+.about-2 .box-content {
+    max-width: 100%;
+}
+
+.about-2 .counter-number {
+    word-break: break-word;
+}
+
+/* ABOUT 3 */
+
+.about-3 .row {
+    align-items: center;
+}
+
+.about-3 .icon-box {
+    width: 100%;
+}
+
+.about-3 .icon {
+    flex-shrink: 0;
+}
+
+.about-3 .icon-box-heading {
+    font-size: clamp(20px, 2vw, 26px);
+}
+
+.about-3 .icon-box-desc {
+    font-size: clamp(14px, 1.3vw, 17px);
+    line-height: 1.8;
+}
+
+/* AWARDS */
+
+.awards-section .container {
+    overflow: hidden;
+}
+
+.award-item img {
+    object-fit: cover;
+}
+
+/* LAPTOP ZOOM FIX */
+
+@media (max-width: 1366px) and (min-width: 992px) {
+
+    .about-2 .box-content {
+        width: calc(100% - 60px);
+    }
+
+    .about-3 .why-right {
+        padding-left: 30px;
+    }
+
+    .about-3 .icon-box {
+        padding: 18px;
+    }
+}
+
+/* TABLET */
+
+@media (max-width: 991px) {
+
+    .about-3 .row {
+        row-gap: 35px;
+    }
+
+    .about-3 .icon-box {
+        padding: 18px;
+    }
+
+    .about-2 {
+        border-radius: 18px;
+    }
+
+    .about-2 .box-content {
+        border-radius: 18px;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 767px) {
+
+    .header-wrap {
+        background-position: center;
+    }
+
+    .title-section {
+        text-align: center;
+        padding: 80px 15px;
+    }
+
+    .about-1 {
+        text-align: center;
+    }
+
+    .about-1 li.list {
+        justify-content: center;
+        text-align: left;
+    }
+
+    .about-1 .btn {
+        margin-top: 10px;
+    }
+
+    .about-2 {
+        margin-bottom: 30px;
+        border-radius: 16px;
+    }
+
+    .about-2 .box-content {
+        margin-top: 180px;
+        padding: 25px 20px;
+    }
+
+    .about-2 .counter-number {
+        font-size: 38px;
+    }
+
+    .about-2 .counter-title {
+        font-size: 20px;
+    }
+
+    .about-3 {
+        padding-top: 20px !important;
+    }
+
+    .about-3 .icon-box {
+        text-align: left;
+    }
+
+    .about-3 .icon {
+        width: 55px;
+        height: 55px;
+    }
+
+    .award-content {
+        left: 18px;
+        right: 18px;
+        bottom: 18px;
+    }
+}
+
+/* SMALL MOBILE */
+
+@media (max-width: 480px) {
+
+    .page-title {
+        font-size: 34px;
+    }
+
+    .about-1 .circle-container {
+        transform: scale(0.92);
+        transform-origin: center;
+    }
+
+    .about-2 .box-content {
+        margin-top: 150px;
+        padding: 20px 15px;
+    }
+
+    .about-3 .icon-box {
+        padding: 15px;
+        width:353px;
+    }
+
+    .award-item {
+        border-radius: 18px;
+    }
+
+    .award-item img {
+        border-radius: 18px;
+    }
+
+    a.btn.d-flex.w-50.align-item-center {
+    width: 100% !important;
+}
+}
+
+/* EXTRA SMALL DEVICES */
+
+@media (max-width: 360px) {
+
+    .about-1 .circle-container {
+        transform: scale(0.82);
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    .about-2 .counter-number {
+        font-size: 32px;
+    }
+
+    .about-2 .counter-description {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .award-title {
+        font-size: 16px;
+    }
+}
