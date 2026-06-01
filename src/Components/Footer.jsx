@@ -273,7 +273,7 @@ export default function Footer() {
                                 </div>
 
                                 <div>
-                                    <a href="mailto:teamprojenius2025@gmail.com">teamprojenius2025@gmail.com</a> 
+                                    <a href="mailto:teamprojenius2025@gmail.com" style={{color:'#9599a1', textDecoration:'none'}}>teamprojenius2025@gmail.com</a> 
                                 </div>
 
                             </div>
@@ -285,7 +285,7 @@ export default function Footer() {
                                 </div>
 
                                 <div>
-                                    <a href="tel:+91 90254 76322">+91 90254 76322</a>
+                                    <a href="tel:+91 90254 76322" style={{color:'#9599a1', textDecoration:'none'}}>+91 90254 76322</a>
                                 </div>
 
                             </div>
