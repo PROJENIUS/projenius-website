@@ -69,6 +69,8 @@ const ProductSection = () => {
             <img
               src={tabsData[activeTab].image}
               alt={tabsData[activeTab].title}
+              data-aos="fade-left"
+              data-aos-delay='400'
             />
           </div>
 
