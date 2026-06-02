@@ -51,6 +51,14 @@ const teamMembers = [
 ];
 
 export default function TeamSection() {
+   useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    once: true,
+    offset: 80,
+    easing: "ease-in-out",
+    });
+  }, []);
   return (
     <section className="team-section">
 

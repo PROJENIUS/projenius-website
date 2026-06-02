@@ -1,8 +1,12 @@
 import React from "react";
 import '../assets/css/TrainingSection.css';
 import '../index.css';
+import useEffect from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function TraningSection(){
+    
     return(
         <section className="training-section py-5">
             <div className="container">
