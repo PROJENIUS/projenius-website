@@ -74,7 +74,7 @@ const ProductSection = () => {
             />
           </div>
 
-          <div className="tabs-text">
+          <div className="tabs-text" data-aos="fade-left" data-aos-delay='450'>
             <h2>{tabsData[activeTab].title}</h2>
             <p>{tabsData[activeTab].description}</p>
 
