@@ -2,8 +2,19 @@ import React from "react";
 import "../index.css";
 import '../assets/css/ContactSection.css'
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function ContactSection() {
+    useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    once: true,
+    offset: 80,
+    easing: "ease-in-out",
+    });
+  }, []);
     return (
         <section className="contact-section">
 
@@ -12,13 +23,15 @@ export default function ContactSection() {
                 <div className="container">
 
                     <div className="heading">
-                        <span id="sub-heading">
+                        <span id="sub-heading" data-aos="fade-up" data-aos-delay="150">
                             Let’s get Started
                         </span>
 
                         <h2
                             id="title"
                             className="contact-section-title"
+                            data-aos="fade-up"
+                            data-aos-delay="300"
                         >
                             Want to work Together
                         </h2>
@@ -53,12 +66,12 @@ export default function ContactSection() {
 
                         <div className="card-content">
 
-                            <h3>
+                            <h3 data-aos="fade-right" data-aos-delay="150">
                                 Build A Creative <br />
                                 Showcase Website.
                             </h3>
 
-                            <Link href="/contact" className="btn">
+                            <Link href="/contact" className="btn" data-aos="fade-left" data-aos-delay="300">
                                 <span className="btn-content">
                                     Let's Talk
                                 </span>
