@@ -57,10 +57,11 @@
 }
 
 .training-content span{
-    display:block;
-    font-size:13px;
-    color:#777;
-    margin-bottom:5px;
+       display: block;
+    font-size: 14px;
+    color: #66cae6;
+    margin-bottom: 5px;
+    font-weight: 700;
 }
 
 .training-content h4{

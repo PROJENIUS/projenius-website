@@ -9,6 +9,9 @@ import { Pagination, Autoplay } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/pagination";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const teamMembers = [
   {
@@ -55,7 +58,7 @@ export default function TeamSection() {
 
         <div className="row align-items-center mb-5">
 
-          <div className="col-lg-4 first">
+          <div className="col-lg-4 first" data-aos="fade-right" data-aos-delay="150">
             <span id="sub-heading">Our Team Members</span>
 
             <h2 id="title" className="text-white">
@@ -63,7 +66,7 @@ export default function TeamSection() {
             </h2>
           </div>
 
-          <div className="col-lg-4 second">
+          <div className="col-lg-4 second" data-aos="fade-up" data-aos-delay="300">
             <p className="section-desc">
               Meet the passionate innovators, developers, designers,
               and creators driving Projenius towards technology
@@ -71,7 +74,7 @@ export default function TeamSection() {
             </p>
           </div>
 
-          <div className="col-lg-4 third">
+          <div className="col-lg-4 third" data-aos="fade-left" data-aos-delay="450">
             <a href="#" className="btn">
               <span className="btn-content">
                 View More
@@ -117,7 +120,7 @@ export default function TeamSection() {
           {teamMembers.map((member, index) => (
             <SwiperSlide key={index}>
 
-              <div className="team-card">
+              <div className="team-card" data-aos="fade-up" data-aos-delay={150 + index * 150}>
 
                 <div className="team-image">
 
