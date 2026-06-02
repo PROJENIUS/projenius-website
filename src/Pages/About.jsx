@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from '../Components/Header';
 import '../index.css';
 import '../assets/css/About-page.css';
@@ -6,9 +6,21 @@ import TeamSection2 from "../Components/TeamSection2";
 import TestimonialSection from "../Components/TestimonialSection";
 import FooterTopSection from "../Components/FooterTopSection";
 import MagazineSection from "../Components/Magazine";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 
 export default function About() {
+
+      useEffect(() => {
+          AOS.init({
+            duration: 1000,
+          once: true,
+          offset: 80,
+          easing: "ease-in-out",
+          });
+        }, []);
+  
 
   return (
     <>
@@ -24,7 +36,7 @@ export default function About() {
     <div className="row align-items-center">
 
       {/* Left Circle Design */}
-      <div className="col-lg-6 col-md-12">
+      <div className="col-lg-6 col-md-12" data-aos="fade-right" data-aos-delay="150">
         <div className="wrapper">
 
           <div className="circle-container">
@@ -46,7 +58,7 @@ export default function About() {
       </div>
 
       {/* Right Content */}
-      <div className="col-lg-6 col-md-12">
+      <div className="col-lg-6 col-md-12" data-aos="fade-left" data-aos-delay="300">
 
         <span id="sub-heading">Who we are</span>
 
@@ -112,7 +124,7 @@ export default function About() {
   </div>
 </section>
       <section className="about-2 container">
-        <div className="box-content">
+        <div className="box-content" data-aos="fade-up" data-aos-delay="150">
           <div className="row">
             <div className="col-lg-4 col-md-4 col-sm-12">
               <h2 className="counter-number">25k+</h2>
@@ -134,13 +146,13 @@ export default function About() {
       </section>
       <section className="about-3 container py-5">
         <div className="row">
-          <div className="col-lg-6 col-12">
+          <div className="col-lg-6 col-12" data-aos="fade-right" data-aos-delay="150">
             <span id="sub-heading">Why Choose us?</span>
             <h2 className="section-title" id="title">Why Projenius Stands Out in Innovation</h2>
             <p className="section-desc">We combine innovation, technology, and practical expertise to deliver reliable solutions, quality services, and impactful learning experiences for everyone.</p>
             <img src="images/projenius-banner-2.webp" alt="" className="why-img" />
           </div>
-          <div className="col-6 why-right">
+          <div className="col-6 why-right" data-aos="fade-left" data-aos-delay="300">
             <div className="icon-box">
               <div className="row">
                 <div className="col-3 col-sm-2">

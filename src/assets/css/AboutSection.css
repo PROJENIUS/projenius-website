@@ -206,7 +206,7 @@
 ================================= */
 
 .about-v2 {
-    padding: clamp(40px, 5vw, 100px) 15px;
+    padding: clamp(18px,5vw,15px) 15px;
 }
 
 .about-v2 .row {

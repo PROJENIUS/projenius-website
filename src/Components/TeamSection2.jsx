@@ -1,6 +1,6 @@
 // Team.jsx
 
-import React from "react";
+import React, { useEffect }from "react";
 import "../index.css";
 import "../assets/css/TeamSection.css";
 
@@ -9,6 +9,9 @@ import { Pagination, Autoplay } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/pagination";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const teamMembers = [
   {
@@ -48,6 +51,23 @@ const teamMembers = [
 ];
 
 export default function TeamSection2() {
+
+  useEffect(() => {
+  AOS.init({
+    duration: 1000,
+    once: false, // animation repeats on scroll up/down
+    mirror: true, // animate while scrolling past elements
+    offset: 80,
+    easing: "ease-in-out",
+  });
+
+  window.addEventListener("load", AOS.refresh);
+
+  return () => {
+    window.removeEventListener("load", AOS.refresh);
+  };
+}, []);
+
   return (
     <section className="team-section">
 
@@ -55,7 +75,7 @@ export default function TeamSection2() {
 
         <div className="row align-items-center mb-5">
 
-          <div className="col-lg-4 first">
+          <div className="col-lg-4 first" data-aos="fade-right" data-aos-delay="150">
             <span id="sub-heading">Our Team Members</span>
 
             <h2 id="title" className="text-white">
@@ -63,7 +83,7 @@ export default function TeamSection2() {
             </h2>
           </div>
 
-          <div className="col-lg-8 second">
+          <div className="col-lg-8 second" data-aos="fade-left" data-aos-delay="300">
             <p className="section-desc" style={{maxWidth:'100%'}}>
               Our dedicated team consists of passionate developers, designers, innovators, and mentors working together to build smart technology solutions. With expertise in AI, IoT, software development, design, and training, we focus on creativity, collaboration, innovation, and delivering impactful results for clients and students.
             </p>
@@ -107,7 +127,7 @@ export default function TeamSection2() {
           {teamMembers.map((member, index) => (
             <SwiperSlide key={index}>
 
-              <div className="team-card">
+              <div className="team-card" data-aos="fade-up" data-aos-delay={150 + index * 100}>
 
                 <div className="team-image">
 

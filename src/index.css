@@ -38,19 +38,21 @@ h6{
     font-size: 40px;
 }
 #sub-heading{
-    font-size: 18px;
-    font-weight: 700;
+    color: #66c7dd;
     margin-bottom: 4px;
-    color: #66C7DD;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 #sub-heading.about{
-    font-size: 18px;
-    font-weight: 700;
-    margin-bottom: 4px;
-    color: #66C7DD;
-    display: flex;
+    color: #66c7dd;
     justify-content: center;
+    margin-bottom: 4px;
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    text-transform: uppercase;
 }  
 
 html, body {
@@ -70,7 +72,7 @@ h1.page-title {
 }
 
 .header-wrap {
-    height: 468px;
+       height: 392px;
     border-bottom: 8px solid #61c9e1;
 }
 
