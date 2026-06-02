@@ -50,14 +50,14 @@ const ProductSection = () => {
           <h2 id="title" data-aos="fade-up" data-aos-delay="200">Innovative Products for Smart Future</h2>
           <p data-aos="fade-up" data-aos-delay="250">Explore our range of innovative solutions designed to empower your business.</p>
         </div>
-        <div className="tabs-header">
+        <div className="tabs-header" data-aos="fade-up"
+              data-aos-delay='300'>
           {tabsData.map((tab, index) => (
             <button
               key={index}
               className={activeTab === index ? "tab-btn active" : "tab-btn"}
               onClick={() => setActiveTab(index)}
-              data-aos="fade-up"
-              data-aos-delay='300'
+              
             >
               {tab.title}
             </button>
