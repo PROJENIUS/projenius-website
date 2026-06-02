@@ -14,12 +14,16 @@ export default function About() {
 
     useEffect(() => {
   AOS.init({
-    duration: 600,
+    duration: 500,
     once: true,
     mirror: false,
-    offset: 50,
+    offset: 10,
     easing: "ease-out",
+    debounceDelay: 0,
+    throttleDelay: 50,
   });
+
+  AOS.refresh();
 }, []);
   
 

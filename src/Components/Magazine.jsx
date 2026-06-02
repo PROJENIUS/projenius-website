@@ -84,7 +84,7 @@ const MagazineSection = () => {
       <div className="magazine-sec-layout-grid">
 
         {/* LEFT SIDE */}
-        <div className="magazine-sec-book-area">
+        <div className="magazine-sec-book-area" data-aos="fade-right" data-aos-duration="1000">
 
           <div className="magazine-sec-book-shadow">
 
