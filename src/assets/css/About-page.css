@@ -137,7 +137,7 @@
     right: 40px;
     bottom: 40px;
     width: 80%;
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
 .about-2 .counter-number {
@@ -796,4 +796,10 @@ img {
     .award-title {
         font-size: 16px;
     }
+}
+
+.about-2 .box-content{
+    transform: translateZ(0);
+    will-change: transform, opacity;
+    backface-visibility: hidden;
 }

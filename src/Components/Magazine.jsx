@@ -1,9 +1,11 @@
-import React, { useState, useRef, forwardRef } from "react";
+import React, { useState, useRef, forwardRef, useEffect} from "react";
 import HTMLFlipBook from "react-pageflip";
 import { pdfjs, Document, Page } from "react-pdf";
 
 import magazineFile from "/magazine.pdf";
 import flipSoundFile from "/page-flip-01a.mp3";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import "../assets/css/MagazineSection.css";
 
@@ -62,6 +64,20 @@ const MagazineSection = () => {
   const handleDocumentLoad = ({ numPages }) => {
     setTotalPages(numPages);
   };
+
+  useEffect(() => {
+  AOS.init({
+    duration: 1000,
+    once: false,
+    mirror: true,
+    offset: 80,
+    easing: "ease-in-out",
+  });
+
+  setTimeout(() => {
+    AOS.refresh();
+  }, 500);
+}, []);
 
   return (
     <section className="magazine-sec-main-wrapper">

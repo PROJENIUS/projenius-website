@@ -51,12 +51,12 @@ const teamMembers = [
 ];
 
 export default function TeamSection() {
-   useEffect(() => {
+  useEffect(() => {
     AOS.init({
       duration: 1000,
-    once: true,
-    offset: 80,
-    easing: "ease-in-out",
+      once: true,
+      offset: 80,
+      easing: "ease-in-out",
     });
   }, []);
   return (
@@ -74,20 +74,10 @@ export default function TeamSection() {
             </h2>
           </div>
 
-          <div className="col-lg-4 second" data-aos="fade-up" data-aos-delay="300">
+          <div className="col-lg-8 second" data-aos="fade-up" data-aos-delay="300">
             <p className="section-desc">
-              Meet the passionate innovators, developers, designers,
-              and creators driving Projenius towards technology
-              and innovation.
+              Our dedicated team consists of passionate developers, designers, innovators, and mentors working together to build smart technology solutions. With expertise in AI, IoT, software development, design, and training, we focus on creativity, collaboration, innovation, and delivering impactful results for clients and students.
             </p>
-          </div>
-
-          <div className="col-lg-4 third" data-aos="fade-left" data-aos-delay="450">
-            <a href="#" className="btn">
-              <span className="btn-content">
-                View More
-              </span>
-            </a>
           </div>
 
         </div>

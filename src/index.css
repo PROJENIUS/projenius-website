@@ -90,3 +90,7 @@ h1.page-title {
 .btn:hover{
     background: linear-gradient(135deg, #00bfff, #52d6ff);
 }
+
+[data-aos]{
+    transform: translate3d(0,0,0);
+}
