@@ -1,5 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../assets/css/ProductSection.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+
 
 const tabsData = [
   {
@@ -29,13 +33,22 @@ const tabsData = [
 const ProductSection = () => {
   const [activeTab, setActiveTab] = useState(0);
 
+  useEffect(() => {
+  AOS.init({
+    duration: 1000,
+  once: true,
+  offset: 80,
+  easing: "ease-in-out",
+  });
+}, []);
+
   return (
     <section className="tabs-section">
       <div className="container">
         <div className="heading">
-          <span id="sub-heading">Our Product</span>
-          <h2 id="title">Innovative Products for Smart Future</h2>
-          <p>Explore our range of innovative solutions designed to empower your business.</p>
+          <span id="sub-heading" data-aos="fade-up" data-aos-delay="150">Our Product</span>
+          <h2 id="title" data-aos="fade-up" data-aos-delay="200">Innovative Products for Smart Future</h2>
+          <p data-aos="fade-up" data-aos-delay="250">Explore our range of innovative solutions designed to empower your business.</p>
         </div>
         <div className="tabs-header">
           {tabsData.map((tab, index) => (
@@ -43,6 +56,8 @@ const ProductSection = () => {
               key={index}
               className={activeTab === index ? "tab-btn active" : "tab-btn"}
               onClick={() => setActiveTab(index)}
+              data-aos="fade-up"
+              data-aos-delay='300'
             >
               {tab.title}
             </button>

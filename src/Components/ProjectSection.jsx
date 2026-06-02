@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../assets/css/ProjectSection.css";
 import '../index.css'
 
@@ -8,7 +8,19 @@ import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 export default function ProjectSection() {
+
+  useEffect(() => {
+  AOS.init({
+    duration: 1000,
+  once: true,
+  offset: 80,
+  easing: "ease-in-out",
+  });
+}, []);
 
   const projects = [
     {
@@ -64,9 +76,9 @@ export default function ProjectSection() {
       <div className="nv-work-container">
 
         <div className="nv-work-header">
-          <span className="nv-sub-heading" id="sub-heading">Our Projects</span>
-          <h2 className="nv-title" id="title">Work Showcase</h2>
-          <p>
+          <span className="nv-sub-heading" id="sub-heading" data-aos="fade-up">Our Projects</span>
+          <h2 className="nv-title" id="title" data-aos="fade-up">Work Showcase</h2>
+          <p data-aos="fade-up">
             We create powerful digital experiences with modern design,
             innovative strategies and professional development solutions.
           </p>
