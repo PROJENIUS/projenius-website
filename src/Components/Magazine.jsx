@@ -2,7 +2,7 @@ import React, { useState, useRef, forwardRef } from "react";
 import HTMLFlipBook from "react-pageflip";
 import { pdfjs, Document, Page } from "react-pdf";
 
-import magazineFile from "/Magazine.pdf";
+import magazineFile from "/magazine.pdf";
 import flipSoundFile from "/page-flip-01a.mp3";
 
 import "../assets/css/MagazineSection.css";
