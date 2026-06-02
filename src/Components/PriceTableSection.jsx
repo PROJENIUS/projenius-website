@@ -1,14 +1,26 @@
 import React from "react";
 import "../assets/css/PriceTableSection.css";
+import useEffect from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const PricingSection = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+      offset: 80,
+      easing: "ease-in-out",
+    });
+  }, []);
+
   return (
     <section className="pricing-main-section">
       <div className="container-fluid">
         <div className="row g-4">
 
           {/* LEFT IMAGE CARD */}
-          <div className="col-lg-4">
+          <div className="col-lg-4" data-aos="fade-right" data-aos-delay="150">
             <div className="pricing-image-card">
               {/* <img
                 src="images/about-main-image.png"
@@ -34,7 +46,7 @@ const PricingSection = () => {
           </div>
 
           {/* MONTHLY PACKAGE */}
-          <div className="col-lg-4">
+          <div className="col-lg-4" data-aos="fade-up" data-aos-delay="300">
             <div className="package-card active-card">
 
               <div className="package-top">
@@ -81,7 +93,7 @@ const PricingSection = () => {
           </div>
 
           {/* YEARLY PACKAGE */}
-          <div className="col-lg-4">
+          <div className="col-lg-4" data-aos="fade-left" data-aos-delay="450">
             <div className="package-card">
 
               <div className="package-top">
