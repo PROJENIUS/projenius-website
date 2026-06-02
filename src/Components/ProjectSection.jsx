@@ -95,35 +95,45 @@ export default function ProjectSection() {
 
             <SwiperSlide key={index}>
 
-              <div className="nv-work-card">
+  <div className="nv-work-card">
 
-                <img src={item.image} alt={item.title} />
+    <div className="nv-flip-box">
 
-                <div className="nv-overlay"></div>
+      {/* FRONT SIDE */}
 
-                <div className="nv-content">
+      <div className="nv-flip-front">
 
-                  <span className="nv-subtitle">
-                    {item.subtitle}
-                  </span>
+        <img src={item.image} alt={item.title} />
 
-                  <h3>{item.title}</h3>
+      </div>
 
-                  <p className="nv-desc">
-                    {item.description}
-                  </p>
+      {/* BACK SIDE */}
 
-                  <div className="nv-rating">
-                    {[...Array(item.rating)].map((_, i) => (
-                      <i key={i} className="bi bi-star-fill"></i>
-                    ))}
-                  </div>
+      <div className="nv-flip-back">
 
-                </div>
+        <span className="nv-subtitle">
+          {item.subtitle}
+        </span>
 
-              </div>
+        <h3>{item.title}</h3>
 
-            </SwiperSlide>
+        <p className="nv-desc">
+          {item.description}
+        </p>
+
+        <div className="nv-rating">
+          {[...Array(item.rating)].map((_, i) => (
+            <i key={i} className="bi bi-star-fill"></i>
+          ))}
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</SwiperSlide>
 
           ))}
 
