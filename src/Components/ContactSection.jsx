@@ -92,22 +92,22 @@ export default function ContactSection() {
 
                     <div className="counter-wrapper">
 
-                        <div className="counter-box">
+                        <div className="counter-box" data-aos="fade-right" data-aos-delay="150">
                             <h2>156k</h2>
                             <p>PROJECT COMPLETE</p>
                         </div>
 
-                        <div className="counter-box">
+                        <div className="counter-box" data-aos="fade-down" data-aos-delay="300">
                             <h2>556k</h2>
                             <p>CLIENTS SATISFACTIONS</p>
                         </div>
 
-                        <div className="counter-box">
+                        <div className="counter-box" data-aos="fade-up" data-aos-delay="450">
                             <h2>234k</h2>
                             <p>ENVATO MARKET</p>
                         </div>
 
-                        <div className="counter-box">
+                        <div className="counter-box" data-aos="fade-left" data-aos-delay="600">
                             <h2>348k</h2>
                             <p>MOBILE APPS</p>
                         </div>
