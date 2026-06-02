@@ -55,17 +55,15 @@ export default function TeamSection2() {
   useEffect(() => {
   AOS.init({
     duration: 1000,
-    once: false, // animation repeats on scroll up/down
-    mirror: true, // animate while scrolling past elements
+    once: false,
+    mirror: true,
     offset: 80,
     easing: "ease-in-out",
   });
 
-  window.addEventListener("load", AOS.refresh);
-
-  return () => {
-    window.removeEventListener("load", AOS.refresh);
-  };
+  setTimeout(() => {
+    AOS.refresh();
+  }, 500);
 }, []);
 
   return (
@@ -94,36 +92,39 @@ export default function TeamSection2() {
         {/* Team Carousel */}
 
         <Swiper
-          modules={[Pagination, Autoplay]}
-          slidesPerView={4}
-          spaceBetween={30}
-          loop={true}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
-          pagination={{
-            clickable: true,
-          }}
-          breakpoints={{
-            0: {
-              slidesPerView: 1,
-            },
+  modules={[Pagination, Autoplay]}
+  slidesPerView={4}
+  spaceBetween={30}
+  loop={true}
+  speed={1000}
+  autoplay={{
+    delay: 2500,
+    disableOnInteraction: false,
+  }}
+  pagination={{
+    clickable: true,
+  }}
+  onInit={() => AOS.refresh()}
+  onSlideChange={() => AOS.refresh()}
+  breakpoints={{
+    0: {
+      slidesPerView: 1,
+    },
 
-            576: {
-              slidesPerView: 2,
-            },
+    576: {
+      slidesPerView: 2,
+    },
 
-            992: {
-              slidesPerView: 3,
-            },
+    992: {
+      slidesPerView: 3,
+    },
 
-            1200: {
-              slidesPerView: 4,
-            },
-          }}
-          className="teamSwiper"
-        >
+    1200: {
+      slidesPerView: 4,
+    },
+  }}
+  className="teamSwiper"
+>
           {teamMembers.map((member, index) => (
             <SwiperSlide key={index}>
 
